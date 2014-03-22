@@ -1,4 +1,4 @@
-body { margin: 5% 20%; }
+body { margin: 80px 20%; }
 body, .scheme, .author, pre, .block {
   font-family: "menlo", monospace;
 }
@@ -19,30 +19,28 @@ pre {
 a {
   color: inherit;
 }
-
 #scheme-select {
-  float: right;
   padding: 20px;
-  width: 140px;
   cursor: pointer;
-  position: relative;
-  top: 23px;
+  position: absolute;
+  top: 100px;
+  right: 20%;
+  z-index: 99;
+  padding-right: 50px;
 }
-
 #scheme-select:hover .scheme-list {
   display: block;
 }
-
 .scheme-list {
   display: none;
+  float: left;
   list-style: none;
   padding: 0;
+  margin-right: 20px;
 }
-
 .scheme-list li {
   margin: 2px 0;
 }
-
 .triangle {
   position: absolute;
   top: 26px;
