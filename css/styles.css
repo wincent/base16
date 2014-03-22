@@ -19,7 +19,6 @@ pre {
 a {
   color: inherit;
 }
-
 #scheme-select {
   padding: 20px;
   cursor: pointer;
@@ -29,11 +28,9 @@ a {
   z-index: 99;
   padding-right: 50px;
 }
-
 #scheme-select:hover .scheme-list {
   display: block;
 }
-
 .scheme-list {
   display: none;
   float: left;
@@ -41,12 +38,9 @@ a {
   padding: 0;
   margin-right: 20px;
 }
-
-
 .scheme-list li {
   margin: 2px 0;
 }
-
 .triangle {
   position: absolute;
   top: 26px;
