@@ -15,6 +15,7 @@ body, .scheme, .author, pre, .block {
 pre {
   font-size: 14px;
   padding: 10px 20px;
+  display: inline-block;
 }
 a {
   color: inherit;
