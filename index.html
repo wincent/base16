@@ -175,15 +175,15 @@ $(function(){
   var body = $('body');
 
 // just for touch-enabled devices: inserted close-button
-  if ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'') {
-    $('<button id="btnClose" class="btn-close" style="position: absolute; top: 100px; right: 20%; border: 0; font-size: 32px; padding: 0 .4em .6em; -webkit-appearance: none; outline: none; vertical-align: top; display: inline-block; cursor: pointer; background-clip: padding-box; text-decoration: none; z-index: 100;">&times;</button>').insertBefore('#scheme-select');
-  }
+  // if ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'') {
+    // $('<button id="btnClose" class="btn-close" style="position: absolute; top: 100px; right: 20%; border: 0; font-size: 32px; padding: 0 .4em .6em; -webkit-appearance: none; outline: none; vertical-align: top; display: inline-block; cursor: pointer; background-clip: padding-box; text-decoration: none; z-index: 100;">&times;</button>').insertBefore('#scheme-select');
+  // }
     // when clicking the select-menu (_anywhere_) on any device ...
   $('#scheme-select').on('click', function (e) {
     var select = $(this);
 
     // add `.hover` class on any device on wrapper-div
-    select.addClass('hover');
+    select.toggleClass('hover');
 
     // add `.has-select-active` class for touch enabled devices on body-tag
     body.addClass('has-select-active');
@@ -193,18 +193,18 @@ $(function(){
   });
 
    // when tapping the close button on touch enabled devices ...
-  $('#btnClose').on('click', function (e) {
-    // var btnClose = $(this);
+  // $('#btnClose').on('click', function (e) {
+  //   // var btnClose = $(this);
 
     // remove `.base08` and `base00-background` classes for touch enabled devices on inserted button to make the button invisible again: see also in `CSS`; (falls back to): .btn-close { background: transparent; color: transparent; }
     // btnClose.removeClass('base08 base00-background');
      // $('#btnClose').toggleClass('base08 base00-background');
     // remove `.hover` class for any device on wrapper-div when hitting the close-button
-    $('#scheme-select').toggleClass('hover');
+    // $('#scheme-select').toggleClass('hover');
 
     // remove `.has-select-active` class for any device on body-tag
-    body.removeClass('has-select-active');
-  });
+    // body.removeClass('has-select-active');
+  // });
 
   // when hovering over the select-menu (_anywhere_) on touch mouse-input enabled devices ...
   $('#scheme-select').on('mouseenter', function (e) {
