@@ -1,6 +1,21 @@
-body { margin: 80px 20%; }
+body {
+  font-size: 100%;
+  line-height: 1.375;
+  padding: 3em 0 5em;
+  box-sizing: border-box;
+}
 body, .scheme, .author, pre, .block {
-  font-family: "menlo", monospace;
+  font-family: "menlo", consolas, monospace;
+}
+.container {
+  max-width: 56em;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+@media (max-width: 450px) {
+  .container {
+    padding-top: 6em;
+  }
 }
 .author {
   font-size: 17px;
@@ -16,6 +31,10 @@ pre {
   font-size: 14px;
   padding: 10px 20px;
   display: inline-block;
+  white-space: pre;
+  overflow: auto;
+  word-spacing: normal;
+  word-break: normal;
 }
 a {
   color: inherit;
@@ -29,7 +48,8 @@ a {
   z-index: 99;
   padding-right: 50px;
 }
-#scheme-select:hover .scheme-list {
+#scheme-select:hover .scheme-list,
+#scheme-select.hover .scheme-list {
   display: block;
 }
 .scheme-list {
@@ -51,4 +71,9 @@ a {
   border-left: 6px solid transparent;
   border-top: 6px solid #fff;
   border-right: 6px solid transparent;
+}
+/* only for touch-enabled devices */
+.btn-close {
+  background: transparent;
+  color: transparent;
 }
