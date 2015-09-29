@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Base16</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
-    <link rel="stylesheet" href="css/base16-3024.css" type="text/css" class="theme 3024" />
-    <link rel="stylesheet" href="css/base16-ashes.css" type="text/css" class="theme ashes" />
+    <link rel="stylesheet" href="css/base16-ateliercave.css" type="text/css" class="theme ateliercave" />
     <link rel="stylesheet" href="css/base16-atelierdune.css" type="text/css" class="theme atelierdune" />
+    <link rel="stylesheet" href="css/base16-atelierestuary.css" type="text/css" class="theme atelierestuary" />
     <link rel="stylesheet" href="css/base16-atelierforest.css" type="text/css" class="theme atelierforest" />
     <link rel="stylesheet" href="css/base16-atelierheath.css" type="text/css" class="theme atelierheath" />
     <link rel="stylesheet" href="css/base16-atelierlakeside.css" type="text/css" class="theme atelierlakeside" />
+    <link rel="stylesheet" href="css/base16-atelierplateau.css" type="text/css" class="theme atelierplateau" />
+    <link rel="stylesheet" href="css/base16-ateliersavanna.css" type="text/css" class="theme ateliersavanna" />
     <link rel="stylesheet" href="css/base16-atelierseaside.css" type="text/css" class="theme atelierseaside" />
+    <link rel="stylesheet" href="css/base16-ateliersulphurpool.css" type="text/css" class="theme ateliersulphurpool" />
+
+    <link rel="stylesheet" href="css/base16-3024.css" type="text/css" class="theme 3024" />
+    <link rel="stylesheet" href="css/base16-ashes.css" type="text/css" class="theme ashes" />
     <link rel="stylesheet" href="css/base16-bespin.css" type="text/css" class="theme bespin" />
     <link rel="stylesheet" href="css/base16-bright.css" type="text/css" class="theme bright" />
     <link rel="stylesheet" href="css/base16-chalk.css" type="text/css" class="theme chalk" />
@@ -35,51 +41,55 @@
     <link rel="stylesheet" href="css/base16-solarized.css" type="text/css" class="theme solarized" />
     <link rel="stylesheet" href="css/base16-tomorrow.css" type="text/css" class="theme tomorrow" />
     <link rel="stylesheet" href="css/base16-twilight.css" type="text/css" class="theme twilight" />
-
-    <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/jquery.ba-hashchange.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/switch.js" charset="utf-8"></script>
-    <a href="https://github.com/chriskempson/base16"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
   </head>
   <body>
-    <div id="scheme-select" class="base00-background default">
-      <div class="current-scheme base07">Pick One!</div>
-      <div class="triangle"></div>
-      <ul class="scheme-list">
-        <li class="base0F"><a href="#3024">3024</a></li>
-        <li class="base0E"><a href="#ashes">Ashes</a></li>
-        <li class="base0D"><a href="#atelierdune">Atelier Dune</a></li>
-        <li class="base0C"><a href="#atelierforest">Atelier Forest</a></li>
-        <li class="base0B"><a href="#atelierheath">Atelier Heath</a></li>
-        <li class="base0A"><a href="#atelierlakeside">Atelier Lakeside</a></li>
-        <li class="base09"><a href="#atelierseaside">Atelier Seaside</a></li>
-        <li class="base08"><a href="#bespin">Bespin</a></li>
-        <li class="base06"><a href="#bright">Bright</a></li>
-        <li class="base04"><a href="#chalk">Chalk</a></li>
-      </ul>
-      <ul class="scheme-list">
-        <li class="base0F"><a href="#default">Default</a></li>
-        <li class="base0E"><a href="#eighties">Eighties</a></li>
-        <li class="base0D"><a href="#flat">Flat</a></li>
-        <li class="base0C"><a href="#grayscale">Grayscale</a></li>
-        <li class="base0B"><a href="#greenscreen">Greenscreen</a></li>
-        <li class="base0A"><a href="#isotope">Isotope</a></li>
-        <li class="base09"><a href="#londontube">London Tube</a></li>
-        <li class="base08"><a href="#marrakesh">Marrakesh</a></li>
-        <li class="base06"><a href="#mocha">Mocha</a></li>
-        <li class="base04"><a href="#monokai">Monokai</a></li>
-      </ul>
-      <ul class="scheme-list">
-        <li class="base0F"><a href="#ocean">Ocean</a></li>
-        <li class="base0E"><a href="#paraiso">Paraiso</a></li>
-        <li class="base0D"><a href="#pop">Pop</a></li>
-        <li class="base0C"><a href="#railscasts">Railscasts</a></li>
-        <li class="base0B"><a href="#shapeshifter">Shapeshifter</a></li>
-        <li class="base0A"><a href="#solarized">Solarized</a></li>
-        <li class="base09"><a href="#tomorrow">Tomorrow</a></li>
-        <li class="base08"><a href="#twilight">Twilight</a></li>
-      </ul>
-    </div>
+  <a href="https://github.com/chriskempson/base16"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+  <div id="scheme-select" class="base00-background default">
+    <div class="current-scheme base07">Pick One!</div>
+    <div class="triangle"></div>
+    <ul class="scheme-list">
+      <li class="base0F"><a href="#ateliercave">Atelier Cave</a></li>
+      <li class="base0E"><a href="#atelierdune">Atelier Dune</a></li>
+      <li class="base0D"><a href="#atelierestuary">Atelier Estuary</a></li>
+      <li class="base0C"><a href="#atelierforest">Atelier Forest</a></li>
+      <li class="base0B"><a href="#atelierheath">Atelier Heath</a></li>
+      <li class="base0A"><a href="#atelierlakeside">Atelier Lakeside</a></li>
+      <li class="base09"><a href="#atelierplateau">Atelier Plateau</a></li>
+      <li class="base08"><a href="#ateliersavanna">Atelier Savanna</a></li>
+      <li class="base06"><a href="#atelierseaside">Atelier Seaside</a></li>
+      <li class="base04"><a href="#ateliersulphurpool">Atelier Sulphurpool</a></li>
+    </ul>
+    <ul class="scheme-list">
+      <li class="base0F"><a href="#3024">3024</a></li>
+      <li class="base0E"><a href="#ashes">Ashes</a></li>
+      <li class="base0D"><a href="#bespin">Bespin</a></li>
+      <li class="base0C"><a href="#bright">Bright</a></li>
+      <li class="base0B"><a href="#chalk">Chalk</a></li>
+      <li class="base0A"><a href="#default">Default</a></li>
+      <li class="base09"><a href="#eighties">Eighties</a></li>
+      <li class="base08"><a href="#flat">Flat</a></li>
+      <li class="base06"><a href="#grayscale">Grayscale</a></li>
+      <li class="base04"><a href="#greenscreen">Greenscreen</a></li>
+    </ul>
+    <ul class="scheme-list">
+      <li class="base0F"><a href="#isotope">Isotope</a></li>
+      <li class="base0E"><a href="#londontube">London Tube</a></li>
+      <li class="base0D"><a href="#marrakesh">Marrakesh</a></li>
+      <li class="base0C"><a href="#mocha">Mocha</a></li>
+      <li class="base0B"><a href="#monokai">Monokai</a></li>
+      <li class="base0A"><a href="#ocean">Ocean</a></li>
+      <li class="base09"><a href="#paraiso">Paraiso</a></li>
+      <li class="base08"><a href="#pop">Pop</a></li>
+      <li class="base06"><a href="#railscasts">Railscasts</a></li>
+      <li class="base04"><a href="#shapeshifter">Shapeshifter</a></li>
+    </ul>
+    <ul class="scheme-list">
+      <li class="base0F"><a href="#solarized">Solarized</a></li>
+      <li class="base0E"><a href="#tomorrow">Tomorrow</a></li>
+      <li class="base0D"><a href="#twilight">Twilight</a></li>
+    </ul>
+  </div>
+  <div class="container">
     <h1>
       <img alt="Base 16" src="base16-logo.png" />
     </h1>
@@ -167,6 +177,68 @@
 <span class="base0D">puts</span> <span class="base0B">"another </span><span class="base0F">#{</span><span class="base0A">Person</span>::<span class="base0D">greet</span><span class="base0F">}</span> <span class="base0F">#{</span><span class="base08">person1</span>.<span class="base0D">name</span><span class="base0F">}</span><span class="base0B">"</span>
       </pre>
     </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+  <script async type="text/javascript" src="js/jquery.ba-hashchange.min.js" charset="utf-8"></script>
+  <script async type="text/javascript" src="js/switch.js" charset="utf-8"></script>
+  <script async>
+$(function(){
+  var body = $('body');
+
+// just for touch-enabled devices: inserted close-button
+  if ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'') {
+    $('<button id="btnClose" class="btn-close" style="position: absolute; top: 100px; right: 20%; border: 0; font-size: 32px; padding: 0 .4em .6em; -webkit-appearance: none; outline: none; vertical-align: top; display: inline-block; cursor: pointer; background-clip: padding-box; text-decoration: none; z-index: 100;">&times;</button>').insertBefore('#scheme-select');
+  }
+    // when clicking the select-menu (_anywhere_) on any device ...
+  $('#scheme-select').on('click', function (e) {
+    var select = $(this);
+
+    // add `.hover` class on any device on wrapper-div
+    select.toggleClass('hover');
+
+    // add `.has-select-active` class for touch enabled devices on body-tag
+    body.addClass('has-select-active');
+
+    // add `.base08` and `base00-background` classes on any device on inserted button to make it visible: see also in `CSS`; (to override): .btn-close { background: transparent; color: transparent; }
+    // $('#btnClose').addClass('base08 base00-background');
+  });
+
+   // when tapping the close button on touch enabled devices ...
+  $('#btnClose').on('click', function (e) {
+  //   // var btnClose = $(this);
+
+    // remove `.base08` and `base00-background` classes for touch enabled devices on inserted button to make the button invisible again: see also in `CSS`; (falls back to): .btn-close { background: transparent; color: transparent; }
+    // btnClose.removeClass('base08 base00-background');
+     // $('#btnClose').toggleClass('base08 base00-background');
+    // remove `.hover` class for any device on wrapper-div when hitting the close-button
+    $('#scheme-select').removeClass('hover');
+
+    // remove `.has-select-active` class for any device on body-tag
+    body.removeClass('has-select-active');
+  });
+
+  // when hovering over the select-menu (_anywhere_) on touch mouse-input enabled devices ...
+  $('#scheme-select').on('mouseenter', function (e) {
+    var select = $(this);
+
+    // add the same `.hover` class for mouse-input enabled devices on wrapper-div
+    select.addClass('hover');
+
+    // add `.has-select-active` class for mouse-input enabled devices on body-tag
+    body.addClass('has-select-active');
+  });
+
+  $('#scheme-select').on('mouseleave', function (e) {
+    var select = $(this);
+
+    // remove the same `.hover` class for mouse-input enabled devices on wrapper-div
+    select.removeClass('hover');
+
+    // remove `.has-select-active` class for mouse-input enabled devices on body-tag
+    body.removeClass('has-select-active');
+  });
+
+});
+  </script>
   </body>
 </html>
-
